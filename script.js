@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const circumference = progressCircle.getTotalLength();
             let counter = { value: 0 };
             
-            // UPDATED AS PER YOUR REQUEST!
             gsap.to(counter, {
                 value: 100,
                 duration: 1.5,
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
 
-        // Updated timeout to match shorter animation
         setTimeout(() => {
             if (preloader) preloader.classList.add('loaded');
             if (mainContainer) mainContainer.classList.add('visible');
@@ -114,5 +112,29 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
-});
 
+    // ------------------------------------
+    // --- FAQ ACCORDION FUNCTIONALITY ---
+    // ------------------------------------
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            // Toggle the 'active' class on the question to rotate the '+' symbol
+            question.classList.toggle('active');
+
+            // Check if the answer is currently visible
+            if (answer.style.maxHeight) {
+                // If it is, collapse it by setting maxHeight to null
+                answer.style.maxHeight = null;
+            } else {
+                // If it's not, set maxHeight to its scrollHeight, which makes it visible
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+});
