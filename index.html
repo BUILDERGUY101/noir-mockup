@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Bigger SVG Preloader with Percentage Counter -->
     <div id="preloader">
         <div class="loader-wrapper">
             <div class="loader-content">
@@ -38,14 +37,15 @@
         </header>
 
         <main>
-            <!-- Hero Section -->
             <section id="home" class="hero">
                 <h1 class="hero-title">Where AI Builds Your Vision.</h1>
-                <p>NØIR is a fully autonomous, AI-powered platform that generates stunning websites from a simple conversation. No code, no templates, just pure creation.</p>
-                <a href="#pricing" class="cta-button">Get Started</a>
+                <p>NØIR is a fully autonomous, AI-powered platform that generates stunning websites and apps from a simple conversation. No code, no templates, just pure creation.</p>
+                <div class="prompt-container anim-item">
+                    <input type="text" placeholder="e.g., a sleek homepage for an AI website builder">
+                    <a href="#pricing" class="cta-button prompt-button">Generate My Site</a>
+                </div>
             </section>
 
-            <!-- Features Section -->
             <section id="features" class="features">
                 <h2 class="section-title">Why Choose NØIR?</h2>
                 <div class="feature-grid">
@@ -64,12 +64,40 @@
                 </div>
             </section>
 
-            <!-- Pricing Section -->
+            <section id="how-it-works" class="how-it-works">
+                <h2 class="section-title">A Simple Conversation is All it Takes</h2>
+                <div class="how-it-works-grid">
+                    <div class="how-it-works-card anim-item">
+                        <div class="how-it-works-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" /></svg>
+                        </div>
+                        <h3>1. Describe Your Vision</h3>
+                        <p>Tell our AI your goals, style, and desired features in plain English. No technical jargon needed.</p>
+                    </div>
+                    <div class="how-it-works-card anim-item">
+                        <div class="how-it-works-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.562L16.25 21.75l-.648-1.188a2.25 2.25 0 01-1.423-1.423L13.25 18.5l1.188-.648a2.25 2.25 0 011.423-1.423L16.25 15.5l.648 1.188a2.25 2.25 0 011.423 1.423L19.25 18.5l-1.188.648a2.25 2.25 0 01-1.423 1.423z" /></svg>
+                        </div>
+                        <h3>2. AI Builds & Refines</h3>
+                        <p>NØIR generates a unique site from scratch. Provide feedback like, "make the logo bigger," and watch it adapt.</p>
+                    </div>
+                    <div class="how-it-works-card anim-item">
+                        <div class="how-it-works-icon">
+                            <!-- FIXED ICON SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                        </div>
+                        <h3>3. Launch & Grow</h3>
+                        <p>Connect your domain and launch in under an hour. Our AI can continue to update your site as your business grows.</p>
+                    </div>
+                </div>
+            </section>
+            
             <section id="pricing" class="pricing">
                 <h2 class="section-title">Pricing That Makes Sense</h2>
                 <div class="pricing-grid">
                      <div class="pricing-card anim-item">
                         <h3>Free</h3>
+                        <p class="plan-description">For trying out the basics.</p>
                         <p class="price"><span>$0</span></p>
                         <ul>
                             <li>Basic AI features</li>
@@ -84,6 +112,7 @@
                     <div class="pricing-card popular anim-item">
                         <div class="popular-badge">Most Popular</div>
                         <h3>Starter</h3>
+                        <p class="plan-description">Perfect for freelancers & portfolios.</p>
                         <p class="price"><span>$19</span>/mo</p>
                         <ul>
                             <li>Full website customization</li>
@@ -97,6 +126,7 @@
                     </div>
                     <div class="pricing-card anim-item">
                         <h3>Business</h3>
+                        <p class="plan-description">Ideal for growing businesses.</p>
                         <p class="price"><span>$49</span>/mo</p>
                         <ul>
                             <li>Free domain included</li>
@@ -110,6 +140,7 @@
                     </div>
                     <div class="pricing-card anim-item">
                         <h3>Professional</h3>
+                        <p class="plan-description">For established companies.</p>
                         <p class="price"><span>$199</span>/mo</p>
                         <ul>
                             <li>Top-tier AI models</li>
@@ -123,6 +154,7 @@
                     </div>
                     <div class="pricing-card enterprise anim-item">
                         <h3>Enterprise</h3>
+                        <p class="plan-description">For large-scale applications.</p>
                         <p class="price"><span>Custom</span></p>
                         <ul>
                             <li>Custom fine-tuned AI models</li>
@@ -137,31 +169,77 @@
                 </div>
             </section>
             
-            <!-- About Section -->
             <section id="about" class="content-page">
                 <h2 class="section-title">Our Mission</h2>
-                <p>We saw a problem. Small business owners, freelancers, and startups are passionate and brilliant, but they often get stuck. Building a professional website or app is a mountain of time, money, and technical headaches. Many can't afford developers, and the existing "DIY" tools are often restrictive and still require a ton of manual work.</p>
-                <p>That's why we created NØIR. We believe that leveraging the true power of generative AI can level the playing field. Our goal is to provide a service that is not just affordable, but genuinely autonomous. We want to empower creators to bring their vision to life without being bogged down by the process.</p>
+                <p class="anim-item">We saw a problem. Small business owners, freelancers, and startups are passionate and brilliant, but they often get stuck. Building a professional website or app is a mountain of time, money, and technical headaches. Many can't afford developers, and the existing "DIY" tools are often restrictive and still require a ton of manual work.</p>
+                <p class="anim-item">That's why we created NØIR. We believe that leveraging the true power of generative AI can level the playing field. Our goal is to provide a service that is not just affordable, but genuinely autonomous. We want to empower creators to bring their vision to life without being bogged down by the process.</p>
             </section>
 
-            <!-- FAQ Section -->
+            <section class="comparison content-page">
+                <h2 class="section-title">NØIR vs. The Competition</h2>
+                <table class="comparison-table anim-item">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>NØIR</th>
+                            <th>Traditional Builders (e.g., Wix)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Autonomous Generation</td>
+                            <td class="check">✔</td>
+                            <td class="cross">✖</td>
+                        </tr>
+                        <tr>
+                            <td>Builds from Scratch (No Templates)</td>
+                            <td class="check">✔</td>
+                            <td class="cross">✖</td>
+                        </tr>
+                        <tr>
+                            <td>Refine with Natural Language</td>
+                            <td class="check">✔</td>
+                            <td class="cross">✖</td>
+                        </tr>
+                        <tr>
+                            <td>AI Model Transparency</td>
+                            <td class="check">✔</td>
+                            <td class="cross">✖</td>
+                        </tr>
+                         <tr>
+                            <td>Manual Drag-and-Drop Required</td>
+                            <td class="cross">✖</td>
+                            <td class="check">✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             <section id="faq" class="content-page">
                 <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="faq-item">
-                    <h3>Do I need to know how to code?</h3>
-                    <p>Absolutely not! That's the whole point of NØIR. You just need an idea. You communicate with our AI in natural language, and it handles all the coding and design for you.</p>
+                <div class="faq-item anim-item">
+                    <h3 class="faq-question">Do I need to know how to code?</h3>
+                    <div class="faq-answer">
+                        <p>Absolutely not! That's the whole point of NØIR. You just need an idea. You communicate with our AI in natural language, and it handles all the coding and design for you.</p>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>Is my website truly unique?</h3>
-                    <p>Yes. We do not use templates. Every single website is generated from the ground up by our AI based on your specific inputs and goals. Your site will be one-of-a-kind.</p>
+                <div class="faq-item anim-item">
+                    <h3 class="faq-question">Is my website truly unique?</h3>
+                    <div class="faq-answer">
+                        <p>Yes. We do not use templates. Every single website is generated from the ground up by our AI based on your specific inputs and goals. Your site will be one-of-a-kind.</p>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>How is this different from Wix or Durable?</h3>
-                    <p>The key difference is autonomy. While other builders assist you, NØIR does the work for you. They require you to manually edit and place elements. With NØIR, you can simply tell the AI, "Change the color of the buttons to blue," and it's done. We save you time and creative energy.</p>
+                <div class="faq-item anim-item">
+                    <h3 class="faq-question">How is this different from Wix or Durable?</h3>
+                    <div class="faq-answer">
+                        <p>The key difference is autonomy. While other builders assist you, NØIR does the work for you. They require you to manually edit and place elements. With NØIR, you can simply tell the AI, "Change the color of the buttons to blue," and it's done. We save you time and creative energy.</p>
+                    </div>
                 </div>
-                 <div class="faq-item">
-                    <h3>Can I use my own domain name?</h3>
-                    <p>Yes! Our Starter plan and above allow you to connect your own custom domain. Our Business and Professional plans even include a free domain for the first year.</p>
+                 <div class="faq-item anim-item">
+                    <h3 class="faq-question">Can I use my own domain name?</h3>
+                    <div class="faq-answer">
+                        <p>Yes! Our Starter plan and above allow you to connect your own custom domain. Our Business and Professional plans even include a free domain for the first year.</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -176,5 +254,4 @@
     <script src="webgl-background.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
