@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NØIR - The Future of Web Design is Autonomous</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Bigger SVG Preloader with Percentage Counter -->
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="loader-content">
+                <svg class="loader-svg" width="180" height="180" viewBox="0 0 180 180">
+                    <circle class="loader-circle-bg" cx="90" cy="90" r="82"></circle>
+                    <circle class="loader-circle-progress" cx="90" cy="90" r="82"></circle>
+                </svg>
+                <div class="loader-logo">NØIR</div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <div id="webgl-bg"></div>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">NØIR</div>
+                <ul>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1 class="hero-title">Where AI Builds Your Vision.</h1>
+                <p>NØIR is a fully autonomous, AI-powered platform that generates stunning websites from a simple conversation. No code, no templates, just pure creation.</p>
+                <a href="#pricing" class="cta-button">Get Started</a>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features">
+                <h2 class="section-title">Why Choose NØIR?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card anim-item">
+                        <h3>Truly Autonomous</h3>
+                        <p>Go from idea to launch in under an hour. Just tell our AI what you want, and watch it build. No drag-and-drop, no manual tweaks needed.</p>
+                    </div>
+                    <div class="feature-card anim-item">
+                        <h3>Radical Transparency</h3>
+                        <p>We don't hide behind buzzwords. Choose from the best open and closed-source AI models and see exactly what's building your site.</p>
+                    </div>
+                    <div class="feature-card anim-item">
+                        <h3>Built From Scratch</h3>
+                        <p>Forget boring, pre-built templates. Every website is uniquely generated based on your goals, ensuring an original design every time.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section id="pricing" class="pricing">
+                <h2 class="section-title">Pricing That Makes Sense</h2>
+                <div class="pricing-grid">
+                     <div class="pricing-card anim-item">
+                        <h3>Free</h3>
+                        <p class="price"><span>$0</span></p>
+                        <ul>
+                            <li>Basic AI features</li>
+                            <li>Up to 5 pages</li>
+                            <li>50 AI calls/day</li>
+                            <li>*.noir.com subdomain</li>
+                            <li>1GB Storage</li>
+                            <li class="faded">"Powered by NØIR" watermark</li>
+                        </ul>
+                        <a href="#" class="cta-button-outline">Start for Free</a>
+                    </div>
+                    <div class="pricing-card popular anim-item">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Starter</h3>
+                        <p class="price"><span>$19</span>/mo</p>
+                        <ul>
+                            <li>Full website customization</li>
+                            <li>Unlimited pages</li>
+                            <li>150 advanced AI calls/day</li>
+                            <li>Connect custom domain</li>
+                            <li>5GB Storage & 50GB Bandwidth</li>
+                            <li>Basic SEO & E-commerce</li>
+                        </ul>
+                        <a href="#" class="cta-button">Choose Starter</a>
+                    </div>
+                    <div class="pricing-card anim-item">
+                        <h3>Business</h3>
+                        <p class="price"><span>$49</span>/mo</p>
+                        <ul>
+                            <li>Free domain included</li>
+                            <li>Unlimited AI calls</li>
+                            <li>Dedicated compute power</li>
+                            <li>Professional email</li>
+                            <li>200GB SSD Storage</li>
+                            <li>Up to 5 site backups</li>
+                        </ul>
+                        <a href="#" class="cta-button-outline">Choose Business</a>
+                    </div>
+                    <div class="pricing-card anim-item">
+                        <h3>Professional</h3>
+                        <p class="price"><span>$199</span>/mo</p>
+                        <ul>
+                            <li>Top-tier AI models</li>
+                            <li>AI-powered analytics</li>
+                            <li>Unlimited storage & bandwidth</li>
+                            <li>Advanced DDoS protection</li>
+                            <li>Geographically distributed CDN</li>
+                            <li>Up to 10 site backups</li>
+                        </ul>
+                        <a href="#" class="cta-button-outline">Choose Pro</a>
+                    </div>
+                    <div class="pricing-card enterprise anim-item">
+                        <h3>Enterprise</h3>
+                        <p class="price"><span>Custom</span></p>
+                        <ul>
+                            <li>Custom fine-tuned AI models</li>
+                            <li>Dedicated physical servers</li>
+                            <li>Full AI integrations</li>
+                            <li>24/7/365 Dedicated Support</li>
+                            <li>Service Level Agreement (SLA)</li>
+                            <li class="faded">And much more...</li>
+                        </ul>
+                        <a href="#" class="cta-button-outline disabled">Coming Soon</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Section -->
+            <section id="about" class="content-page">
+                <h2 class="section-title">Our Mission</h2>
+                <p>We saw a problem. Small business owners, freelancers, and startups are passionate and brilliant, but they often get stuck. Building a professional website or app is a mountain of time, money, and technical headaches. Many can't afford developers, and the existing "DIY" tools are often restrictive and still require a ton of manual work.</p>
+                <p>That's why we created NØIR. We believe that leveraging the true power of generative AI can level the playing field. Our goal is to provide a service that is not just affordable, but genuinely autonomous. We want to empower creators to bring their vision to life without being bogged down by the process.</p>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="content-page">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>Do I need to know how to code?</h3>
+                    <p>Absolutely not! That's the whole point of NØIR. You just need an idea. You communicate with our AI in natural language, and it handles all the coding and design for you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my website truly unique?</h3>
+                    <p>Yes. We do not use templates. Every single website is generated from the ground up by our AI based on your specific inputs and goals. Your site will be one-of-a-kind.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How is this different from Wix or Durable?</h3>
+                    <p>The key difference is autonomy. While other builders assist you, NØIR does the work for you. They require you to manually edit and place elements. With NØIR, you can simply tell the AI, "Change the color of the buttons to blue," and it's done. We save you time and creative energy.</p>
+                </div>
+                 <div class="faq-item">
+                    <h3>Can I use my own domain name?</h3>
+                    <p>Yes! Our Starter plan and above allow you to connect your own custom domain. Our Business and Professional plans even include a free domain for the first year.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 NØIR. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="webgl-background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
